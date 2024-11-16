@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); 
+*{ 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+@media screen and (min-width: 1280px) {
+.wrapper{ 
+    width: 100vw; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+} 
+.main{ 
+    width: 336px;
+    border: 1px solid #c4c4c4; 
+    border-top: 28px solid #FFDC40; 
+    border-radius: 5px; 
+    display: flex; 
+    align-items: center; 
+    flex-direction: column; 
+    padding: 0 25px; 
+} 
+.to_do_list{ 
+    font-family: Roboto; 
+    font-weight: 900; 
+    font-size: 26px; 
+    width: 100%; 
+    height: 34px; 
+    text-align: center; 
+    margin-top: 15px;
+    margin-bottom: 20px;
+} 
+.a_to_z{ 
+    display: block; 
+    width: 25px; 
+    height: 15px; 
+    align-self: flex-end; 
+    margin: 10px 0; 
+    border: none; 
+    background-color: white;
+     
+} 
+.inp{ 
+    width: 286px; 
+    height: 40px; 
+    border: 1px solid #c4c4c4; 
+    border-radius: 10px; 
+    padding: 0 10px;
+} 
+.x_button_container{ 
+    display: flex; 
+    position: relative; 
+    flex-direction: column;
+    margin-top: 20px;
+} 
+.x_button{ 
+    position: absolute; 
+    align-self: flex-end; 
+    top: 10px; 
+    right: 8px; 
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%; 
+    color: #c4c4c4; 
+    border: 1px solid #c4c4c4; 
+    background-color: white; 
+    
+} 
+.plus{ 
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    background-color: #AA68FE; 
+    border: none; 
+    color: white; 
+    font-size: large; 
+    position: absolute;; 
+} 
+.plus:active{ 
+    background-color: #3a0678; 
+} 
+.add{ 
+    width: 150px; 
+    height: 50px; 
+    border-radius: 50px; 
+    background-color: #9953F1; 
+    border: none; 
+    color: white; 
+    font-size: medium; 
+    margin-left: 10px;
+} 
+.add:active{ 
+    background-color: #9252e0; 
+} 
+.add_button{ 
+    margin: 10px 0; 
+} 
+.x_button:hover{ 
+    background-color: #9953F1; 
+    color: white; 
+    border: 1px solid #9953F1; 
+    cursor: pointer; 
+} 
+.list{ 
+    display: none; 
+    width: 286px; 
+    border-radius: 10px; 
+    border: 1px solid #c4c4c4;
+    max-height: 200px;
+    overflow-y: auto;
+} 
+ol{ 
+    width: 229px; 
+    display: flex; 
+    flex-direction: column; 
+    margin: 0 auto; 
+    overflow-y: auto;
+} 
+ol li{ 
+    font-family: Roboto; 
+    font-weight: 400; 
+    font-size: 14px; 
+    line-height: 40px; 
+    position: relative;
+    word-wrap: break-word;
+    word-break: break-all;
+} 
+.last{ 
+    display: none; 
+} 
+
+#first_hover{
+    display: none;
+}
+ 
+.betta{ 
+    right: -20px; 
+}
+
+.sort_buttons {
+    position: absolute;
+    top: -40px;
+    right: 0;
+}
+
+.sort_buttons button {
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.sort_buttons button img {
+    width: 100%;
+    height: 100%;
+}
+}
+@media screen and (min-width: 992px) and (max-width: 1279px) {
+    .wrapper{ 
+        width: 100vw; 
+        height: 100vh; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+    } 
+    .main{ 
+        width: 330px;
+        border: 1px solid #c4c4c4; 
+        border-top: 27px solid #FFDC40; 
+        border-radius: 5px; 
+        display: flex; 
+        align-items: center; 
+        flex-direction: column; 
+        padding: 0 24px; 
+    } 
+    .to_do_list{ 
+        font-family: Roboto; 
+        font-weight: 900; 
+        font-size: 23px; 
+        width: 100%; 
+        height: 30px; 
+        text-align: center; 
+        margin-top: 13px;
+        margin-bottom: 18px;
+    } 
+    .a_to_z{ 
+        display: block; 
+        width: 22px; 
+        height: 12px; 
+        align-self: flex-end; 
+        margin: 9px 0; 
+        border: none; 
+        background-color: white;
+         
+    } 
+    .inp{ 
+        width: 284px; 
+        height: 36px; 
+        border: 1px solid #c4c4c4; 
+        border-radius: 10px; 
+        padding: 0 9px;
+    } 
+    .x_button_container{ 
+        display: flex; 
+        position: relative; 
+        flex-direction: column;
+        margin-top: 20px;
+    } 
+    .x_button{ 
+        position: absolute; 
+        align-self: flex-end; 
+        top: 10px; 
+        right: 8px; 
+        width: 18px; 
+        height: 18px; 
+        border-radius: 50%; 
+        color: #c4c4c4; 
+        border: 1px solid #c4c4c4; 
+        background-color: white; 
+        
+    } 
+    .plus{ 
+        width: 46px; 
+        height: 46px; 
+        border-radius: 50%; 
+        background-color: #AA68FE; 
+        border: none; 
+        color: white; 
+        font-size: large; 
+        position: absolute;; 
+    } 
+    .plus:active{ 
+        background-color: #3a0678; 
+    } 
+    .add{ 
+        width: 148px; 
+        height: 46px; 
+        border-radius: 50px; 
+        background-color: #9953F1; 
+        border: none; 
+        color: white; 
+        font-size: medium; 
+        margin-left: 10px;
+    } 
+    .add:active{ 
+        background-color: #9252e0; 
+    } 
+    .add_button{ 
+        margin: 10px 0; 
+    } 
+    .x_button:hover{ 
+        background-color: #9953F1; 
+        color: white; 
+        border: 1px solid #9953F1; 
+        cursor: pointer; 
+    } 
+    .list{ 
+        display: none; 
+        width: 282px; 
+        border-radius: 8px; 
+        border: 1px solid #c4c4c4;
+        max-height: 198px;
+        overflow-y: auto;
+    } 
+    ol{ 
+        width: 225px; 
+        display: flex; 
+        flex-direction: column; 
+        margin: 0 auto; 
+        overflow-y: auto;
+    } 
+    ol li{ 
+        font-family: Roboto; 
+        font-weight: 390; 
+        font-size: 12px; 
+        line-height: 38px; 
+        position: relative;
+        word-wrap: break-word;
+        word-break: break-all;
+    } 
+    .last{ 
+        display: none; 
+    } 
+    
+    #first_hover{
+        display: none;
+    }
+     
+    .betta{ 
+        right: -20px; 
+    }
+    
+    .sort_buttons {
+        position: absolute;
+        top: -36px;
+        right: 0;
+    }
+    
+    .sort_buttons button {
+        width: 28px;
+        height: 28px;
+        background: none;
+        border: none;
+        padding: 0;
+    }
+    
+    .sort_buttons button img {
+        width: 90%;
+        height: 90%;
+}
+}
+@media screen and (min-width: 320px) and (max-width: 991px) {
+    .wrapper{ 
+        width: 100vw; 
+        height: 100vh; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+    } 
+    .main{ 
+        width: 328px;
+        border: 1px solid #c4c4c4; 
+        border-top: 25px solid #FFDC40; 
+        border-radius: 5px; 
+        display: flex; 
+        align-items: center; 
+        flex-direction: column; 
+        padding: 0 24px; 
+    } 
+    .to_do_list{ 
+        font-family: Roboto; 
+        font-weight: 900; 
+        font-size: 22px; 
+        width: 100%; 
+        height: 28px; 
+        text-align: center; 
+        margin-top: 13px;
+        margin-bottom: 18px;
+    } 
+    .a_to_z{ 
+        display: block; 
+        width: 20px; 
+        height: 10px; 
+        align-self: flex-end; 
+        margin: 9px 0; 
+        border: none; 
+        background-color: white;
+         
+    } 
+    .inp{ 
+        width: 282px; 
+        height: 34px; 
+        border: 1px solid #c4c4c4; 
+        border-radius: 10px; 
+        padding: 0 9px;
+    } 
+    .x_button_container{ 
+        display: flex; 
+        position: relative; 
+        flex-direction: column;
+        margin-top: 20px;
+    } 
+    .x_button{ 
+        position: absolute; 
+        align-self: flex-end; 
+        top: 10px; 
+        right: 8px; 
+        width: 16px; 
+        height: 16px; 
+        border-radius: 50%; 
+        color: #c4c4c4; 
+        border: 1px solid #c4c4c4; 
+        background-color: white; 
+        
+    } 
+    .plus{ 
+        width: 44px; 
+        height: 44px; 
+        border-radius: 50%; 
+        background-color: #AA68FE; 
+        border: none; 
+        color: white; 
+        font-size: large; 
+        position: absolute;; 
+    } 
+    .plus:active{ 
+        background-color: #3a0678; 
+    } 
+    .add{ 
+        width: 145px; 
+        height: 44px; 
+        border-radius: 50px; 
+        background-color: #9953F1; 
+        border: none; 
+        color: white; 
+        font-size: medium; 
+        margin-left: 10px;
+    } 
+    .add:active{ 
+        background-color: #9252e0; 
+    } 
+    .add_button{ 
+        margin: 10px 0; 
+    } 
+    .x_button:hover{ 
+        background-color: #9953F1; 
+        color: white; 
+        border: 1px solid #9953F1; 
+        cursor: pointer; 
+    } 
+    .list{ 
+        display: none; 
+        width: 279px; 
+        border-radius: 8px; 
+        border: 1px solid #c4c4c4;
+        max-height: 196px;
+        overflow-y: auto;
+    } 
+    ol{ 
+        width: 223px; 
+        display: flex; 
+        flex-direction: column; 
+        margin: 0 auto; 
+        overflow-y: auto;
+    } 
+    ol li{ 
+        font-family: Roboto; 
+        font-weight: 380; 
+        font-size: 11px; 
+        line-height: 37px; 
+        position: relative;
+        word-wrap: break-word;
+        word-break: break-all;
+    } 
+    .last{ 
+        display: none; 
+    } 
+    
+    #first_hover{
+        display: none;
+    }
+     
+    .betta{ 
+        right: -20px; 
+    }
+    
+    .sort_buttons {
+        position: absolute;
+        top: -34px;
+        right: 0;
+    }
+    
+    .sort_buttons button {
+        width: 26px;
+        height: 26px;
+        background: none;
+        border: none;
+        padding: 0;
+    }
+    
+    .sort_buttons button img {
+        width: 85%;
+        height: 85%;
+}
+
+}
+
